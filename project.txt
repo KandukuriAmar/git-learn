@@ -1,2 +1,3 @@
-We are doing a project.
+We are doing a project
 It is a project on Bank loan approval system
+we have just completed only half of the project
