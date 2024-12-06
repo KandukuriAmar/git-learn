@@ -1,0 +1,65 @@
+* git is a distributed version control system 
+
+* working directory -> The project or a folder that you are modifying in your local machine
+
+* local directory -> The is a .git folder that will stores the working directory changes in it separately to push to GitHub.
+
+						local directory(.git)
+							|
+							|
+						_________________________
+						|			|
+					   staging area      	git commit history
+					(stores the changed
+					or created files to
+					it and next push to
+					branch.)
+
+git commands:
+------------
+1. git --version --> gives the version of git
+
+2. git status --> gives that any files are modifies or any new file is created and they haven't moved to staging area.
+
+3. git init -b main --> used to create a .git folder in working directory and creates a branch of main (default).
+
+4. git add . --> It is used to store the all the files to move to staging area
+
+5. git commit -m ".....message" --> used to commit that change made in to .git folder(local machine).
+
+6. branch --> A branch is nothing but the pointer pointing to a directory that your changes.
+		we have many branches like
+			->  signup/login (authentication/authrization)
+			->  Home Page
+			->  admin module
+
+7. git branch -c branchname --> create a branch for any purpose to add a feature to application/website/app.
+				ex: git branch -c feature1
+
+
+8. git branch -c branchname --> delete a branch for any purpose like having bug in this feature1.
+				ex: git branch -d feature1
+
+
+9. For example we have main, feature1 branches we added a new feature of added a avatar to user in feature1 branch.
+	we merge both branches by,
+		* git merge branchname
+			|
+			--> here at defaultly we are in main branch by making a command git switch main (or) git checkout 				main. here the git merge feature1
+
+			--> Now here feature1 is added to main and all log histories are added to main branch also.
+
+10. git log --> To get all the commit changes that have made in that branch by whom.
+
+11. Here in up merge concept i have an main branch with some files and a have a another branch called feature1 with added feature avatar to user and i have added to git hub and merged the feature1 to main and after i have understood that now that avatar user have a bug.
+ - Now we create a new branch of new branch
+ - git pull origin main
+	-> check the main is up to date means other team members are merged their code with main account correctly.
+ - now rectify the bug and merge in main again.
+
+11. git tag --> They are used to give the versions like we can make a tag with v1.0 and add all that version files into it;		v1.0
+
+12. git tag -force versionname -m "...message"/git tag versionname -m "...msg" --> used to create a tag.
+
+13. git tag --> gives all tags in your local repository.
+
